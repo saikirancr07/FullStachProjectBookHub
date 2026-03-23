@@ -4,6 +4,9 @@ import Cookies from "js-cookie"
 import { useNavigate, Navigate } from "react-router-dom"
 import "./index.css"
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
+
 function Login () {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -32,7 +35,7 @@ function Login () {
       event.preventDefault()
       console.log("event")
       const userDetails = {username, password}
-      const loginUrl = 'http://127.0.0.1:8000/api/login/'
+      const loginUrl = `${API}/api/login/`
       const options = {
         method: 'POST',
         headers : {

@@ -11,6 +11,9 @@ import Footer from '../Footer'
 
 import './index.css'
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
+
 function BookDetails () {
   const [status, setStatus] = useState('')
   const [bookDetailsList, setBookDetailsList] = useState([])
@@ -22,7 +25,7 @@ function BookDetails () {
     const getTheBookDetails = async () => {
         setStatus("INPROGRESS")
         const jwtToken = Cookies.get('jwtToken')
-        const url = `http://127.0.0.1:8000/api/books/${id}/`
+        const url = `${API}/api/books/${id}/`
         const options = {
             method: 'GET',
             headers: {

@@ -12,6 +12,9 @@ import Footer from '../Footer'
 
 import './index.css'
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
+
 const bookshelvesList = [
   {
     id: '22526c8e-680e-4419-a041-b05cc239ece4',
@@ -49,7 +52,7 @@ function BookShelves () {
     const getTheBookShelves = async () => {
         setStatus("INPROGRESS")
         const jwtToken = Cookies.get('jwtToken')
-        const url = `http://127.0.0.1:8000/api/books/?read_status=${bookShelfName}&search=${searchInput}`
+        const url = `${API}/api/books/?read_status=${bookShelfName}&search=${searchInput}`
         const options = {
         method: 'GET',
         headers: {

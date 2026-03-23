@@ -15,6 +15,8 @@ import "swiper/css/navigation";
 import { AiFillCloseCircle } from 'react-icons/ai'
 import './index.css'
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 
 function Home () {
     const [status, setStatus] = useState('')
@@ -25,7 +27,7 @@ function Home () {
         const getTheBooks = async () => {
             setStatus("INPROGRESS")
             const jwtToken = Cookies.get('jwtToken')
-            const relatedBooksUrl = 'http://127.0.0.1:8000/api/books/top-rated/'
+            const relatedBooksUrl = `${API}/api/books/top-rated`
             const options = {
                 method: 'GET',
                 headers: {
