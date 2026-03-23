@@ -1,0 +1,167 @@
+.login-bg-container {
+  background-color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .login-bg-container {
+    background-color: #f8fafc;
+    width: 1440px;
+    height: 100vh;
+    padding: 0px;
+  }
+}
+.mobile-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .mobile-view {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+.mobile-image {
+  padding-top: 32px;
+}
+.desktop-image {
+  display: none;
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+}
+@media screen and (min-width: 1440px) {
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+  }
+}
+.mobile-icon {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5a7184;
+  padding-bottom: 12px;
+}
+.input {
+  background: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  width: 312px;
+  height: 20px;
+  margin-bottom: 19px;
+  padding: 18px 0px 18px 20px;
+}
+.login-button {
+  width: 312px;
+  height: 40px;
+  background: #0284c7;
+  border-radius: 8px;
+  border: none;
+  margin-top: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+.desktop-view {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000000;
+  align-items: center;
+}
+@media screen and (max-width: 1439px) {
+  .desktop-view {
+    display: none;
+  }
+}
+.right-container {
+  width: 499px;
+  height: 484px;
+  background-color: #ffffff;
+  padding: 48px 70px 48px 69px;
+  margin-left: 72px;
+}
+.desktop-icon {
+  width: 141px;
+  height: 48px;
+}
+.form2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 51px;
+}
+.input2 {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c3cad9;
+  border-radius: 8px;
+  height: 56px;
+  width: 360px;
+  padding-left: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 27px;
+}
+.login-button2 {
+  height: 56px;
+  width: 360px;
+  background: #0284c7;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+.error-msg2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ef4444;
+}
+.error-msg {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ef4444;
+}
+.login-bottom-container {
+  margin-left: 150px;
+}

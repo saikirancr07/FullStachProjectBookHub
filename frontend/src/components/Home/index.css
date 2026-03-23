@@ -1,0 +1,311 @@
+.home-bg-container {
+  position: relative;
+  width: 360px;
+  height: 645px;
+  background-color: #f5f7fa;
+}
+@media screen and (min-width: 960px) {
+  .home-bg-container {
+    width: 95vw;
+  }
+}
+.popup-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 310px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media screen and (min-width: 960px) {
+  .popup-container {
+    display: none;
+  }
+}
+.popup-home {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #64748b;
+  letter-spacing: -0.355556px;
+}
+.popup-bookshelves {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #64748b;
+  letter-spacing: -0.355556px;
+}
+.popup-logout {
+  width: 73px;
+  height: 32px;
+  background-color: #0284c7;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f8fafc;
+  border: none;
+}
+.close-button {
+  background-color: transparent;
+  border: none;
+}
+.home-heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1e293b;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 960px) {
+  .home-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+    color: #1e293b;
+    margin-top: 48px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    padding: 0px;
+  }
+}
+.home-para {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #475569;
+  padding-top: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 960px) {
+  .home-para {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 10px;
+    padding: 0px;
+  }
+}
+.find-books {
+  width: 104px;
+  height: 36px;
+  background: #0284c7;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f8fafc;
+  margin-left: 24px;
+  margin-top: 16px;
+}
+@media screen and (min-width: 960px) {
+  .find-books {
+    display: none;
+  }
+}
+.loader-container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.cover-pic {
+  width: 130px;
+  height: 99px;
+  border-radius: 2px;
+}
+@media screen and (min-width: 960px) {
+  .cover-pic {
+    width: 350px;
+    height: 224px;
+  }
+}
+.slider-container {
+  width: 360px;
+  height: 203px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0.443396px rgba(40, 41, 61, 0.08),
+    0px 0.443396px 0.886792px rgba(96, 97, 112, 0.16);
+  margin-top: 16px;
+}
+@media screen and (min-width: 960px) {
+  .slider-container {
+    width: 90%;
+    height: 424px;
+    box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+      0px 1px 2px rgba(96, 97, 112, 0.16);
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+}
+.slider {
+  width: 80%;
+  margin-left: 20px;
+}
+@media screen and (min-width: 960px) {
+  .slider {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+.author-name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #334155;
+  text-align: center;
+}
+.slider-content {
+  width: 100px;
+  margin: 10px;
+}
+@media screen and (min-width: 960px) {
+  .slider-content {
+    width: 350px;
+    height: 292px;
+    margin: 10px;
+  }
+}
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #475569;
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.home-bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  width: 100%;
+}
+@media screen and (min-width: 9600px) {
+  .home-bottom-container {
+    margin-top: 166px;
+    width: 100%;
+  }
+}
+.home-icons-container {
+  width: 150px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+@media screen and (min-width: 960px) {
+  .home-icons-container {
+    width: 200px;
+    height: 21px;
+  }
+}
+.contact-us {
+  font-family: 'HK Grotesk';
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3d3c3c;
+  margin-top: 14px;
+  padding: 0px;
+}
+@media screen and (min-width: 960px) {
+  .contact-us {
+    color: #3d3c3c;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.desktop-find-books {
+  display: none;
+}
+.desktop-slider-container-heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1e293b;
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 960px) {
+  .desktop-heading-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-slider-container-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .desktop-find-books {
+    width: 104px;
+    height: 36px;
+    background: #0284c7;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #f8fafc;
+    display: block;
+  }
+}
+.home-slider-list-container {
+  display: flex;
+  padding-left: 0px;
+  overflow: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.home-normal-link-item {
+  text-align: center;
+  text-decoration: none;
+}
