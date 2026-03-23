@@ -15,7 +15,7 @@ import "swiper/css/navigation";
 import { AiFillCloseCircle } from 'react-icons/ai'
 import './index.css'
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API = import.meta.env.VITE_API_URL
 
 
 function Home () {

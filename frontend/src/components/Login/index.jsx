@@ -4,7 +4,7 @@ import Cookies from "js-cookie"
 import { useNavigate, Navigate } from "react-router-dom"
 import "./index.css"
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API = import.meta.env.VITE_API_URL
 
 
 function Login () {
