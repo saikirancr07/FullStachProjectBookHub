@@ -28,14 +28,18 @@ function Login () {
 
     const renderSuccessView = (token) => {
         Cookies.set("jwtToken", token, {expires : 30, path : '/'})
-        navigate("/", {replace:true})
+        return navigate("/", {replace:true})
     }
 
     const submitTheForm = async (event) => {
       event.preventDefault()
-      console.log("event")
+      if (username === "" || password === "") {
+        setErrorShow(true)
+        setErrMsg("username and password shouldn't be empty")
+        return
+      }
       const userDetails = {username, password}
-      const loginUrl = `${API}/api/login/`
+      const loginUrl = `http://127.0.0.1:8000/api/login/`
       const options = {
         method: 'POST',
         headers : {
@@ -50,10 +54,12 @@ function Login () {
         console.log(data.access)
       } else {
         setErrorShow(true)
-        setErrMsg(data.error_msg)
+        setErrMsg(data.error)
       }
 
     }
+
+    const goToRegister=()=>(navigate('/register', {replace:true}))
 
     const token = Cookies.get("jwtToken")
     if (token !== undefined){
@@ -105,12 +111,13 @@ function Login () {
               <button type="submit" className="login-button">
                 Login
               </button>
+              <button type="button" onClick={goToRegister} className="login-button">REGISTER</button>
             </form>
-            <button type="button" className="user-credentials">
+            <button type="button" className="credentials-button">
               DEMO User Credentials
             </button>
-            <p className="user-name">username : rahul</p>
-            <p className="password">password : rahul@2021</p>
+            <p className="credentials">username : chintu</p>
+            <p className="credentials">password : chintu@123</p>
           </div>
         </div>
       </div>

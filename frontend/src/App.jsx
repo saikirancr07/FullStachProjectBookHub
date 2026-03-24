@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useState } from "react"
 import Login  from "./components/Login"
+import Register from "./components/Register"
 import Home from "./components/Home"
 import PopupContext from "./context/popupContext"
 import './App.css'
@@ -25,6 +26,7 @@ function App() {
       >
         <Routes>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="/shelf" element={<BookShelves/>}/>
           <Route path="/books/:id" element={<BookDetails/>}/>

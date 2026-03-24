@@ -25,7 +25,7 @@ function BookDetails () {
     const getTheBookDetails = async () => {
         setStatus("INPROGRESS")
         const jwtToken = Cookies.get('jwtToken')
-        const url = `${API}/api/books/${id}/`
+        const url = `http://127.0.0.1:8000/api/books/${id}/`
         const options = {
             method: 'GET',
             headers: {
