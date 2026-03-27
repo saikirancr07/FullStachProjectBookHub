@@ -7,6 +7,7 @@ import PopupContext from "./context/popupContext"
 import './App.css'
 import BookShelves from "./components/BookShelves"
 import BookDetails from "./components/BookDetails"
+import ProtectedRoute from "./components/ProtectedRoute"
 import NotFound from "./components/NotFound"
 
 function App() {
@@ -25,11 +26,11 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/shelf" element={<BookShelves/>}/>
-          <Route path="/books/:id" element={<BookDetails/>}/>
+          <Route path="/login" element={<ProtectedRoute><Login/></ProtectedRoute>}/>
+          <Route path="/register" element={<ProtectedRoute><Register/></ProtectedRoute>}/>
+          <Route path="/" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
+          <Route path="/shelf" element={<ProtectedRoute><BookShelves/></ProtectedRoute>}/>
+          <Route path="/books/:id" element={<ProtectedRoute><BookDetails/></ProtectedRoute>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </PopupContext.Provider>

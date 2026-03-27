@@ -52,7 +52,7 @@ function BookShelves () {
     const getTheBookShelves = async () => {
         setStatus("INPROGRESS")
         const jwtToken = Cookies.get('jwtToken')
-        const url = `http://127.0.0.1:8000/api/books/?read_status=${bookShelfName}&search=${searchInput}`
+        const url = `${API}/api/books/?read_status=${bookShelfName}&search=${searchInput}`
         const options = {
         method: 'GET',
         headers: {

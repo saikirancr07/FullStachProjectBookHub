@@ -39,7 +39,7 @@ function Login () {
         return
       }
       const userDetails = {username, password}
-      const loginUrl = `http://127.0.0.1:8000/api/login/`
+      const loginUrl = `${API}/api/login/`
       const options = {
         method: 'POST',
         headers : {
